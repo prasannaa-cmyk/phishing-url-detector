@@ -84,7 +84,7 @@ if st.button("Predict"):
         # Display creative result card
         if prediction == 1:
             st.markdown(
-                f"<div style='padding:20px; background-color:#FFCCCC; border-radius:10px;'>"
+                f"<div style='padding:20px; background-color:#f00; border-radius:10px;'>"
                 f"🚨 <b>Phishing URL Detected!</b><br>"
                 f"URL: {url_input}<br>"
                 + (f"Confidence: {proba*100:.2f}%" if proba else "")
@@ -95,7 +95,7 @@ if st.button("Predict"):
                 st.progress(proba)
         else:
             st.markdown(
-                f"<div style='padding:20px; background-color:#CCFFCC; border-radius:10px;'>"
+                f"<div style='padding:20px; background-color:#00ab2e; border-radius:10px;'>"
                 f"✅ <b>URL is Benign</b><br>"
                 f"URL: {url_input}<br>"
                 + (f"Confidence: {proba*100:.2f}%" if proba else "")
